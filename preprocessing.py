@@ -10,3 +10,6 @@ def dlist(x):
     return list
 movies['genres']=movies['genres'].apply(dlist)
 #originally genres was in a dictionary format, we changed it to list     
+movies['keywords'] = movies['keywords'].apply(dlist)
+movies['cast'] = movies['cast'].apply(dlist)
+movies['crew'] = movies['crew'].apply(dlist)
