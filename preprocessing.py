@@ -13,7 +13,7 @@ movies['genres']=movies['genres'].apply(dlist)
 movies['keywords'] = movies['keywords'].apply(dlist)
 movies['cast'] = movies['cast'].apply(dlist)
 movies['crew'] = movies['crew'].apply(dlist)
-#converting movies overview to list to make concantenation easier
+#converting movies overview to list to make concantenation easier (we will be making a tags column)
 movies['overview'] = movies['overview'].apply(lambda x:x.split())
 
 #removing spaces is good for reccomender system, people with same first name might confuse the system
