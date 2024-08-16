@@ -33,3 +33,8 @@ movies['cast'] = movies['cast'].apply(
 movies['crew'] = movies['crew'].apply(
     lambda x: [i.replace(" ", "") for i in x] if x else []
 )
+
+#creating tags column in a new dataframe
+movies['tags'] = movies['overview'] + movies['genres'] + movies['keywords'] + movies['cast'] + movies['crew']
+
+df = movies[['movie_id', 'title', 'tags']]
