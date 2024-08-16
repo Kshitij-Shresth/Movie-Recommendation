@@ -13,3 +13,23 @@ movies['genres']=movies['genres'].apply(dlist)
 movies['keywords'] = movies['keywords'].apply(dlist)
 movies['cast'] = movies['cast'].apply(dlist)
 movies['crew'] = movies['crew'].apply(dlist)
+#converting movies overview to list to make concantenation easier
+movies['overview'] = movies['overview'].apply(lambda x:x.split())
+
+#removing spaces is good for reccomender system, people with same first name might confuse the system
+
+movies['genres'] = movies['genres'].apply(
+    lambda x: [i.replace(" ", "") for i in x] if x else []
+)
+
+movies['keywords'] = movies['keywords'].apply(
+    lambda x: [i.replace(" ", "") for i in x] if x else []
+)
+
+movies['cast'] = movies['cast'].apply(
+    lambda x: [i.replace(" ", "") for i in x] if x else []
+)
+
+movies['crew'] = movies['crew'].apply(
+    lambda x: [i.replace(" ", "") for i in x] if x else []
+)
