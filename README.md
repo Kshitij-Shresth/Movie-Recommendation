@@ -1,0 +1,1 @@
+This project constructs a movie recommendation system by leveraging the power of text processing and TF-IDF vectorization. By analyzing various textual features like genres, keywords, cast, crew, and overview, the system calculates the similarity between movies and recommends those with the most similar content to the user. 
