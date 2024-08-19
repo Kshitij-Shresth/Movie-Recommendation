@@ -10,5 +10,8 @@ Simple Web Interface: Built with Flask and Jinja2 templates.
 Extensible Codebase: Easily extendable for more complex recommendation algorithms.
 
 ## Installation
-'''git clone https://github.com/your-username/movie-recommender-system.git'''
-'''cd movie-recommender-system'''
+
+ ``` git clone https://github.com/your-username/movie-recommender-system.git```
+```cd movie-recommender-system```
+```python app.py```
+
