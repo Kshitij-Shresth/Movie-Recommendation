@@ -24,3 +24,12 @@ Easily extendable for more complex recommendation algorithms.
 
 ## Dataset
 The movie data is sourced from the TMDB dataset, which contains metadata for thousands of movies.
+
+## How It Works
+
+### Text Processing: 
+The overview, genres, keywords, cast, and director of each movie are combined and processed into a single text feature.
+### TF-IDF Vectorization: 
+The text features are converted into numerical vectors using TF-IDF.
+### Cosine Similarity: 
+The system calculates the cosine similarity between movie vectors to find the most similar movies.
