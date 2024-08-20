@@ -22,3 +22,5 @@ Easily extendable for more complex recommendation algorithms.
 ```cd movie-recommender-system```
 ```python app.py```
 
+## Dataset
+The movie data is sourced from the TMDB dataset, which contains metadata for thousands of movies.
